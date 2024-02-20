@@ -24,3 +24,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/course', [CourseController::class, 'index'])->name('course.index');
+Route::get('/course/add', [CourseController::class, 'create'])->name('course.create');
+Route::get('/courses', [CourseController::class, 'store'])->name('course.store');
